@@ -1,0 +1,19 @@
+@import '_need.scss';
+
+.header{
+	&_nav{
+		&-list{
+			list-style-type: none;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			&-item{
+				&-link{
+					text-decoration: none;
+					@include txt(black, 16px, 12px, Arial);
+				}
+			}
+		}
+	}
+}

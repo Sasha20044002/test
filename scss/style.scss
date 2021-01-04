@@ -1,21 +1,17 @@
 @import '_header.scss';
 
-.class {
+.main {
 	display: flex;
-	flex-direction: column;
+	// flex-direction: column;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	margin: 0 auto;
-}
-
-.heading {
-	font-size: 16px;
-	color: black;
-	line-height: 18px;
-}
-
-.text {
-	font-size: 12px;
-	color: grey;
-	line-height: 14px;
+	&-heading{
+		width: 100%;
+		text-align: center;
+		@include txt(black, 18px, 16px, Arial);
+	}
+	.text {
+		@include txt(grey, 16px, 12px, Arial);
+	}
 }
